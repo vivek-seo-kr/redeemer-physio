@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redeemer Advanced Physiotherapy Clinic | Dr. Ashish</title>
+    <meta name="description" content="Advanced Pain Management & Rehabilitation by Dr. Ashish. Regain your mobility, reclaim your life.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        emerald: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            200: '#a7f3d0',
+                            300: '#6ee7b7',
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .heading-lg {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+        .heading-md {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            letter-spacing: -0.01em;
+        }
+        .section-padding {
+            padding-top: clamp(4rem, 8vw, 8rem);
+            padding-bottom: clamp(4rem, 8vw, 8rem);
+        }
+        [data-aos] {
+            pointer-events: none;
+        }
+        .aos-animate {
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans selection:bg-emerald-100 selection:text-emerald-900">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-5">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">R</div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg leading-tight text-emerald-900">Redeemer</span>
+                    <span class="text-[10px] uppercase tracking-widest text-emerald-600 font-semibold">Physiotherapy</span>
+                </div>
+            </div>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#home" class="text-sm font-medium text-slate-600 hover:text-emerald-600 transition-colors">Home</a>
+                <a href="#about" class="text-sm font-medium text-slate-600 hover:text-emerald-600 transition-colors">About</a>
+                <a href="#services" class="text-sm font-medium text-slate-600 hover:text-emerald-600 transition-colors">Services</a>
+                <a href="#treatments" class="text-sm font-medium text-slate-600 hover:text-emerald-600 transition-colors">Treatments</a>
+                <a href="#contact" class="text-sm font-medium text-slate-600 hover:text-emerald-600 transition-colors">Contact</a>
+                <a href="tel:+910000000000" class="bg-emerald-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-emerald-700 transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+                    <i data-lucide="phone" class="w-4 h-4"></i>
+                    Book Now
+                </a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button id="mobile-menu-toggle" class="md:hidden text-slate-900">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white shadow-xl border-t border-slate-100 p-6 flex flex-col gap-4">
+            <a href="#home" class="mobile-link text-lg font-medium text-slate-900">Home</a>
+            <a href="#about" class="mobile-link text-lg font-medium text-slate-900">About</a>
+            <a href="#services" class="mobile-link text-lg font-medium text-slate-900">Services</a>
+            <a href="#treatments" class="mobile-link text-lg font-medium text-slate-900">Treatments</a>
+            <a href="#contact" class="mobile-link text-lg font-medium text-slate-900">Contact</a>
+            <a href="tel:+910000000000" class="bg-emerald-600 text-white px-6 py-3 rounded-xl text-center font-bold flex items-center justify-center gap-2">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+                Call Now
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 overflow-hidden bg-slate-50">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-emerald-50/50 rounded-l-[100px] -z-10 hidden lg:block"></div>
+        <div class="absolute top-1/4 left-10 w-24 h-24 bg-emerald-100 rounded-full blur-3xl opacity-50 -z-10"></div>
+        <div class="absolute bottom-10 right-1/4 w-32 h-32 bg-emerald-200 rounded-full blur-3xl opacity-30 -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-up" data-aos-duration="800">
+                <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-bold mb-6">
+                    <i data-lucide="shield-check" class="w-4 h-4"></i>
+                    Advanced Pain Management & Rehabilitation
+                </div>
+                <h1 class="heading-lg text-slate-900 mb-6 leading-tight">
+                    Regain Your <span class="text-emerald-600">Mobility</span>, <br />
+                    Reclaim Your <span class="text-emerald-600">Life</span>.
+                </h1>
+                <p class="text-lg text-slate-600 mb-10 max-w-lg leading-relaxed">
+                    Redeemer Advanced Physiotherapy Clinic offers personalized, 
+                    evidence-based treatments using the latest medical technology 
+                    to help you recover faster and stay pain-free.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-emerald-600 text-white px-8 py-4 rounded-2xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-emerald-200 hover:bg-emerald-700 transition-all transform hover:scale-105 active:scale-95">
+                        Book Appointment
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="tel:+910000000000" class="bg-white text-slate-900 border-2 border-slate-200 px-8 py-4 rounded-2xl font-bold flex items-center justify-center gap-2 hover:border-emerald-600 hover:text-emerald-600 transition-all transform hover:scale-105 active:scale-95">
+                        <i data-lucide="phone" class="w-5 h-5"></i>
+                        Call Dr. Ashish
+                    </a>
+                </div>
+
+                <div class="mt-12 flex items-center gap-8 border-t border-slate-200 pt-8">
+                    <div class="flex flex-col">
+                        <span class="text-2xl font-bold text-slate-900">10+</span>
+                        <span class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Years Exp.</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl font-bold text-slate-900">5k+</span>
+                        <span class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Happy Patients</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl font-bold text-slate-900">15+</span>
+                        <span class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Specializations</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                <div class="relative z-10 rounded-[40px] overflow-hidden shadow-2xl border-8 border-white">
+                    <img
+                        src="https://lh3.googleusercontent.com/p/AF1QipPZ6NJAiN78czuiYCxXtlEkSfRiKay1m6fhzkF4=s1360-w1360-h1020-rw"
+                        alt="Redeemer Advanced Physiotherapy Clinic"
+                        class="w-full h-auto object-cover"
+                        referrerpolicy="no-referrer"
+                    />
+                </div>
+                
+                <!-- Floating Cards -->
+                <div class="absolute -top-6 -right-6 md:-right-12 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-4 z-20 animate-bounce-slow">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600">
+                        <i data-lucide="activity" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-500 uppercase tracking-wider">Recovery Rate</p>
+                        <p class="text-lg font-bold text-slate-900">98.5%</p>
+                    </div>
+                </div>
+
+                <div class="absolute -bottom-6 -left-6 md:-left-12 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-4 z-20 animate-bounce-slow-delayed">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-500 uppercase tracking-wider">Expert Care</p>
+                        <p class="text-lg font-bold text-slate-900">Personalized</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+            <div class="relative" data-aos="fade-right" data-aos-duration="800">
+                <div class="relative z-10 rounded-[40px] overflow-hidden shadow-2xl">
+                    <img
+                        src="https://lh3.googleusercontent.com/p/AF1QipNYYbWKkb6L9fgO05jF3pm-kDvsAHudy-wpXgRl=s1360-w1360-h1020-rw"
+                        alt="Dr. Ashish - Redeemer Advanced Physiotherapy Clinic"
+                        class="w-full h-auto object-cover"
+                        referrerpolicy="no-referrer"
+                    />
+                </div>
+                <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-emerald-600 rounded-[40px] -z-10 hidden md:block"></div>
+                
+                <div class="absolute top-1/2 -left-10 transform -translate-y-1/2 bg-white p-8 rounded-3xl shadow-2xl border border-slate-100 hidden xl:block">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600">
+                                <i data-lucide="award" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-slate-900">Certified Expert</p>
+                                <p class="text-sm text-slate-500">Advanced Physiotherapy</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600">
+                                <i data-lucide="heart" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-slate-900">Patient Centric</p>
+                                <p class="text-sm text-slate-500">Compassionate Care</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-left" data-aos-duration="800">
+                <div class="inline-flex items-center gap-2 text-emerald-600 font-bold text-sm uppercase tracking-widest mb-4">
+                    <i data-lucide="stethoscope" class="w-4 h-4"></i>
+                    Meet Your Expert
+                </div>
+                <h2 class="heading-md text-slate-900 mb-6">
+                    Dr. Ashish: Dedicated to Your <br />
+                    <span class="text-emerald-600">Physical Well-being</span>
+                </h2>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    With over a decade of experience in advanced physiotherapy, Dr. Ashish 
+                    has helped thousands of patients overcome chronic pain and mobility issues. 
+                    At Redeemer Advanced Physiotherapy Clinic, we combine traditional 
+                    techniques with cutting-edge technology to provide the most effective 
+                    rehabilitation programs.
+                </p>
+                
+                <div class="grid sm:grid-cols-2 gap-4 mb-10">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle-2" class="text-emerald-600 shrink-0 w-5 h-5"></i>
+                        <span class="font-medium text-slate-700">Personalized Treatment Plans</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle-2" class="text-emerald-600 shrink-0 w-5 h-5"></i>
+                        <span class="font-medium text-slate-700">Advanced Medical Equipment</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle-2" class="text-emerald-600 shrink-0 w-5 h-5"></i>
+                        <span class="font-medium text-slate-700">Evidence-Based Practice</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle-2" class="text-emerald-600 shrink-0 w-5 h-5"></i>
+                        <span class="font-medium text-slate-700">Post-Surgery Rehabilitation</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle-2" class="text-emerald-600 shrink-0 w-5 h-5"></i>
+                        <span class="font-medium text-slate-700">Sports Injury Specialist</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle-2" class="text-emerald-600 shrink-0 w-5 h-5"></i>
+                        <span class="font-medium text-slate-700">Neurological Recovery</span>
+                    </div>
+                </div>
+
+                <button class="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition-all shadow-lg shadow-slate-200">
+                    Learn More About Us
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 text-emerald-600 font-bold text-sm uppercase tracking-widest mb-4">
+                    <i data-lucide="shield-alert" class="w-4 h-4"></i>
+                    Our Expertise
+                </div>
+                <h2 class="heading-md text-slate-900 mb-6">
+                    Comprehensive <span class="text-emerald-600">Physiotherapy</span> Services
+                </h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                    We provide a wide range of specialized treatments tailored to your 
+                    unique needs, helping you achieve your health and mobility goals.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="0">
+                    <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="activity" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Orthopedic Physiotherapy</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">Specialized care for joint, bone, and muscle conditions including arthritis and fractures.</p>
+                    <button class="flex items-center gap-2 text-emerald-600 font-bold text-sm group-hover:gap-3 transition-all">
+                        Learn More
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="dna" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Neurological Rehabilitation</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">Expert recovery programs for stroke, Parkinson's, and other nerve-related conditions.</p>
+                    <button class="flex items-center gap-2 text-emerald-600 font-bold text-sm group-hover:gap-3 transition-all">
+                        Learn More
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="zap" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Sports Injury Management</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">Get back to your peak performance with targeted injury recovery and prevention.</p>
+                    <button class="flex items-center gap-2 text-emerald-600 font-bold text-sm group-hover:gap-3 transition-all">
+                        Learn More
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="heart-pulse" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Post-Surgical Recovery</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">Personalized rehab to ensure optimal healing and mobility after surgery.</p>
+                    <button class="flex items-center gap-2 text-emerald-600 font-bold text-sm group-hover:gap-3 transition-all">
+                        Learn More
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-pink-100 text-pink-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="wind" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Pediatric Physiotherapy</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">Compassionate care for children with developmental or physical challenges.</p>
+                    <button class="flex items-center gap-2 text-emerald-600 font-bold text-sm group-hover:gap-3 transition-all">
+                        Learn More
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+                <!-- Service 6 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-16 h-16 bg-cyan-100 text-cyan-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="stethoscope" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Geriatric Care</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">Improving quality of life and mobility for our senior patients.</p>
+                    <button class="flex items-center gap-2 text-emerald-600 font-bold text-sm group-hover:gap-3 transition-all">
+                        Learn More
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatments Section -->
+    <section id="treatments" class="section-padding bg-emerald-900 text-white overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-emerald-800/50 -skew-x-12 transform translate-x-1/2 -z-0"></div>
+        <div class="absolute bottom-0 left-0 w-1/4 h-1/2 bg-emerald-800/30 rounded-full blur-3xl -z-0"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div data-aos="fade-right">
+                    <div class="inline-flex items-center gap-2 text-emerald-300 font-bold text-sm uppercase tracking-widest mb-4">
+                        <i data-lucide="sparkles" class="w-4 h-4"></i>
+                        Advanced Technology
+                    </div>
+                    <h2 class="heading-md mb-6">
+                        Next-Generation <br />
+                        <span class="text-emerald-400">Medical Treatments</span>
+                    </h2>
+                    <p class="text-lg text-emerald-100/80 mb-10 leading-relaxed">
+                        We leverage the latest advancements in medical technology to provide 
+                        treatments that are more effective, less invasive, and lead to 
+                        faster recovery times.
+                    </p>
+                    
+                    <div class="grid sm:grid-cols-2 gap-8">
+                        <div class="flex flex-col gap-4" data-aos="fade-up" data-aos-delay="0">
+                            <div class="w-12 h-12 bg-emerald-800 rounded-xl flex items-center justify-center text-emerald-400 border border-emerald-700">
+                                <i data-lucide="activity" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Matrix Rhythm Therapy</h3>
+                            <p class="text-sm text-emerald-100/60 leading-relaxed">A cell-biological therapy that improves micro-circulation and stimulates cellular metabolism.</p>
+                        </div>
+                        <div class="flex flex-col gap-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="w-12 h-12 bg-emerald-800 rounded-xl flex items-center justify-center text-emerald-400 border border-emerald-700">
+                                <i data-lucide="zap" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Laser Therapy</h3>
+                            <p class="text-sm text-emerald-100/60 leading-relaxed">Non-invasive treatment using light energy to accelerate tissue repair and reduce inflammation.</p>
+                        </div>
+                        <div class="flex flex-col gap-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="w-12 h-12 bg-emerald-800 rounded-xl flex items-center justify-center text-emerald-400 border border-emerald-700">
+                                <i data-lucide="shield-check" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Shockwave Therapy</h3>
+                            <p class="text-sm text-emerald-100/60 leading-relaxed">High-energy acoustic waves to treat chronic pain in musculoskeletal tissues.</p>
+                        </div>
+                        <div class="flex flex-col gap-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="w-12 h-12 bg-emerald-800 rounded-xl flex items-center justify-center text-emerald-400 border border-emerald-700">
+                                <i data-lucide="sparkles" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Dry Needling</h3>
+                            <p class="text-sm text-emerald-100/60 leading-relaxed">Targeted muscle treatment to release trigger points and improve muscle function.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative" data-aos="zoom-in">
+                    <div class="rounded-[40px] overflow-hidden border-8 border-emerald-800 shadow-2xl">
+                        <img
+                            src="https://lh3.googleusercontent.com/p/AF1QipPEUdWPyhBZ89GdejLdq1yoYH9xMo6YmQOkTh97=s1360-w1360-h1020-rw"
+                            alt="Advanced Medical Technology - Redeemer Clinic"
+                            class="w-full h-auto object-cover"
+                            referrerpolicy="no-referrer"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 text-emerald-600 font-bold text-sm uppercase tracking-widest mb-4">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    Get In Touch
+                </div>
+                <h2 class="heading-md text-slate-900 mb-6">
+                    Book Your <span class="text-emerald-600">Appointment</span> Today
+                </h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                    Take the first step towards a pain-free life. Contact us to schedule 
+                    your consultation with Dr. Ashish.
+                </p>
+            </div>
+
+            <div class="max-w-5xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8" data-aos="fade-up">
+                    <!-- Call Us -->
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col gap-4 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600">
+                            <i data-lucide="phone" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900">Call Us</p>
+                            <p class="text-slate-500">+91 00000 00000</p>
+                        </div>
+                    </div>
+
+                    <!-- Email Us -->
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col gap-4 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900">Email Us</p>
+                            <p class="text-slate-500">info@redeemerphysio.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Visit Our Clinic -->
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col gap-4 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900">Visit Our Clinic</p>
+                            <p class="text-slate-500 mb-4">Redeemer Advanced Physiotherapy Clinic, Dr. Ashish</p>
+                            <a href="https://share.google/HHFhrNW7GZgI5fb6B" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-emerald-600 font-bold text-sm hover:gap-3 transition-all">
+                                View on Google Maps
+                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Working Hours -->
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col gap-4 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600">
+                            <i data-lucide="clock" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900">Working Hours</p>
+                            <div class="flex justify-between text-sm text-slate-500 mt-2">
+                                <span>Mon - Sat:</span>
+                                <span>09:00 AM - 08:00 PM</span>
+                            </div>
+                            <div class="flex justify-between text-sm text-slate-500 mt-1">
+                                <span>Sunday:</span>
+                                <span>By Appointment Only</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="space-y-6">
+                    <div class="flex items-center gap-2">
+                        <div class="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">R</div>
+                        <div class="flex flex-col">
+                            <span class="font-bold text-lg leading-tight text-white">Redeemer</span>
+                            <span class="text-[10px] uppercase tracking-widest text-emerald-400 font-semibold">Physiotherapy</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 leading-relaxed">
+                        Redeemer Advanced Physiotherapy Clinic is dedicated to providing 
+                        the highest quality of care through advanced technology and 
+                        personalized treatment plans.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-400 hover:bg-emerald-600 hover:text-white transition-all"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-400 hover:bg-emerald-600 hover:text-white transition-all"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-400 hover:bg-emerald-600 hover:text-white transition-all"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-400 hover:bg-emerald-600 hover:text-white transition-all"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-8">Quick Links</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="#home" class="hover:text-emerald-400 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-emerald-400 transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-emerald-400 transition-colors">Services</a></li>
+                        <li><a href="#treatments" class="hover:text-emerald-400 transition-colors">Treatments</a></li>
+                        <li><a href="#contact" class="hover:text-emerald-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-8">Our Services</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="#services" class="hover:text-emerald-400 transition-colors">Orthopedic Care</a></li>
+                        <li><a href="#services" class="hover:text-emerald-400 transition-colors">Neuro Rehab</a></li>
+                        <li><a href="#services" class="hover:text-emerald-400 transition-colors">Sports Injury</a></li>
+                        <li><a href="#treatments" class="hover:text-emerald-400 transition-colors">Matrix Therapy</a></li>
+                        <li><a href="#treatments" class="hover:text-emerald-400 transition-colors">Laser Therapy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-8">Newsletter</h4>
+                    <p class="text-slate-400 mb-6">Subscribe to get health tips and clinic updates.</p>
+                    <form class="flex gap-2">
+                        <input type="email" placeholder="Your email" class="bg-slate-800 border-none rounded-xl px-4 py-3 text-sm flex-1 outline-none focus:ring-2 focus:ring-emerald-500 text-white">
+                        <button class="bg-emerald-600 p-3 rounded-xl hover:bg-emerald-700 transition-colors">
+                            <i data-lucide="heart" class="w-5 h-5"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500 text-sm">
+                <p>© <span id="year"></span> Redeemer Advanced Physiotherapy Clinic. All rights reserved.</p>
+                <div class="flex gap-8">
+                    <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Initialize AOS
+        AOS.init({
+            once: true,
+            duration: 800,
+            offset: 100
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white/90', 'backdrop-blur-md', 'shadow-sm', 'py-3');
+                navbar.classList.remove('bg-transparent', 'py-5');
+            } else {
+                navbar.classList.remove('bg-white/90', 'backdrop-blur-md', 'shadow-sm', 'py-3');
+                navbar.classList.add('bg-transparent', 'py-5');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuToggle.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.setAttribute('data-lucide', 'menu');
+            } else {
+                icon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons();
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuToggle.querySelector('i').setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
+
+        // Set Current Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <style>
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-bounce-slow {
+            animation: bounce-slow 4s ease-in-out infinite;
+        }
+        .animate-bounce-slow-delayed {
+            animation: bounce-slow 5s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+    </style>
+</body>
+</html>
